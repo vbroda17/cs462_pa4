@@ -42,9 +42,7 @@ int main(int argc, char *argv[])
   double maxChange = 0;
 
   int rank, size;
-
   MPI_Init(&argc, &argv);
-
   MPI_Comm_rank(MPI_COMM_WORLD, &rank);
   MPI_Comm_size(MPI_COMM_WORLD, &size);
 
@@ -54,13 +52,66 @@ int main(int argc, char *argv[])
     return 1; // This will aborte the rest of the jobs since it is a non zero return value
   }
 
-  if (rank == 0) {
+  if(rank == 0)
+  {
     xMax = atoi(argv[1]);
     yMax = atoi(argv[2]);
     steps = atoi(argv[3]);
     numThreads = atoi(argv[4]);
+
+    grid = (Node***)malloc(yMax * sizeof(Node**));
+    for(i = 0; i < yMax; i++) grid[i] = (Node**)malloc(xMax * sizeof(Node*));
+    for(i = 0; i < yMax; i++)
+    {
+        for(j = 0; j < xMax; j++)
+        {
+            // allocate individual node
+            grid[i][j] = (Node*)malloc(sizeof(Node));
+        }
+    }
+
+    // making initializing cells and grid
+    for(i = 0; i < yMax; i++)
+    {
+        for(j = 0; j < xMax; j++)
+        {
+            // get its starting temp, error check here to
+            if (scanf("%d", &tmp_temp) != 1) 
+            {
+                printf("Invalid input, see read me.\n");
+                return 1;
+            }
+
+            tmp_node = grid[i][j];
+            tmp_node->temp = (double)tmp_temp;
+
+            // Initialize edges, neighbors are null if the node isn't in range
+            tmp_node->north = (i > 0) ? grid[i - 1][j] : NULL;
+            tmp_node->south = (i < yMax - 1) ? grid[i + 1][j] : NULL;
+            tmp_node->east = (j < xMax - 1) ? grid[i][j + 1] : NULL;
+            tmp_node->west = (j > 0) ? grid[i][j - 1] : NULL;
+
+            // setting Node as read or black. making assumption of size being 2^n + 2
+            if((i + j) % 2 == 0) tmp_node->node_class = BLACK;
+            else tmp_node->node_class = RED;
+        }
+    }
   }
 
+  MPI_Barrier(MPI_COMM_WORLD);
+
+  printf("made it to reading lol - From %d of %d\n", rank, size);
+
+
+
+  if (rank == 0)
+  {
+    for (i = 0; i < yMax; i++) {
+      for (j = 0; j < xMax; j++) free(grid[i][j]);
+      free(grid[i]);
+    }
+    free(grid);
+  }
   MPI_Finalize();
   return 0;
 }
