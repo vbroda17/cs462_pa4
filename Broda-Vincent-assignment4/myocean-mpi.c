@@ -1,3 +1,10 @@
+/*
+Vincent Broda
+cs462
+Assignment 4
+This is another version of myocean, this time with mpi. See assignment two for more details.
+This program was hevily based on my previous version, however due to the structure of message passiging, their might be quite a few changes
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -45,6 +52,7 @@ int main(int argc, char* argv[])
   yMax = atoi(argv[2]);
   steps = atoi(argv[3]);
 
+  // for rank - initialiing the grid 
   if (rank == 0)
   {
     printf("This is rank zero startring to do stuff\n");
@@ -85,6 +93,7 @@ int main(int argc, char* argv[])
   }
   else
   {
+    // just allocating memory for other ranks
     printf("Rank %d doing grid allocation\n", rank);
       grid = (Node***)malloc(yMax * sizeof(Node**));
       for (i = 0; i < yMax; i++) {
@@ -92,8 +101,10 @@ int main(int argc, char* argv[])
         for (j = 0; j < xMax; j++) grid[i][j] = (Node*)malloc(sizeof(Node));
     }
   }
+  // doing a random sync here, just to be safe, since im not checking this ones preformace.
   MPI_Barrier(MPI_COMM_WORLD);
 
+  // broadcasting the grid from rank 0 to all others
   for (i = 0; i < yMax; i++) {
     for (j = 0; j < xMax; j++) {
       Node* tmp_node = grid[i][j];
@@ -101,10 +112,12 @@ int main(int argc, char* argv[])
       MPI_Bcast(&(tmp_node->node_class), 1, MPI_INT, 0, MPI_COMM_WORLD);
     }
   }
-  MPI_Barrier(MPI_COMM_WORLD);
-  printf("made it to reading lol - From %d of %d\n", rank, size);
-  MPI_Barrier(MPI_COMM_WORLD);
+  // I am also going to keep all my dedug print statements here, but I will coment them out
+  // MPI_Barrier(MPI_COMM_WORLD);
+  // printf("made it to reading lol - From %d of %d\n", rank, size);
+  // MPI_Barrier(MPI_COMM_WORLD);
 
+  // dividing up the threads work loads
   int rows_per_rank = yMax / size;
 
   yStart = rank * rows_per_rank;
@@ -112,10 +125,11 @@ int main(int argc, char* argv[])
 
   xStart = 0;
   xEnd = xMax - 1;
-  MPI_Barrier(MPI_COMM_WORLD);
-  printf("Rank %d    x: %d-%d    y: %d-%d\n", rank, xStart, xEnd, yStart, yEnd);
-  MPI_Barrier(MPI_COMM_WORLD);
+  // MPI_Barrier(MPI_COMM_WORLD);
+  // printf("Rank %d    x: %d-%d    y: %d-%d\n", rank, xStart, xEnd, yStart, yEnd);
+  // MPI_Barrier(MPI_COMM_WORLD);
 
+  // getting the timer started
   double start, end;
   if (rank == 0) {
     start = MPI_Wtime();
@@ -124,7 +138,7 @@ int main(int argc, char* argv[])
   // This is the part that is actually paralized
   for (step = 0; step < steps; step++)
   {
-    if(rank == 0) printf("\nstep %d\n", step);
+    // if(rank == 0) printf("\nstep %d\n", step);
     maxChange = 0;
     if(step % 2 == 0) tmp_class = RED;
     else tmp_class = BLACK;
@@ -133,11 +147,11 @@ int main(int argc, char* argv[])
     {
       for(j = xStart; j < xEnd; j++)
       {
-        printf("trying at %d %d %d\n", rank, i, j);
+        // printf("trying at %d %d %d\n", rank, i, j);
 
         if(i == 0 || i == yMax - 1 || j == 0 || j == xMax) 
         {
-          printf("Continuing at %d %d %d\n", rank, i, j);
+          // printf("Continuing at %d %d %d\n", rank, i, j);
           continue;
         }
         //doing caclulation only if right step. I tried to do in smarter ways with some type of index thing but that tended to introduce bugs
@@ -150,7 +164,7 @@ int main(int argc, char* argv[])
           tmp_west = grid[i][j - 1];
           avg = tmp_north->temp + tmp_south->temp + tmp_east->temp + tmp_west->temp + tmp_node->temp;
           avg = avg / 5.0;
-          printf("Rank %d changing i,j %d,%d from %lf to %lf\n", rank, i, j, tmp_node->temp, avg);
+          // printf("Rank %d changing i,j %d,%d from %lf to %lf\n", rank, i, j, tmp_node->temp, avg);
           // storing max change, if it falls under a certain point then we will end the main loop
           if(fabs(avg - tmp_node->temp) > maxChange) maxChange = fabs(avg - tmp_node->temp);
           tmp_node->temp = avg;
@@ -159,13 +173,10 @@ int main(int argc, char* argv[])
       }
     }
 
-    MPI_Barrier(MPI_COMM_WORLD);
-
-    // Exchange data between neighboring ranks
+    // MPI_Barrier(MPI_COMM_WORLD);   This is not needed here lol
     MPI_Status status;
 
-
-    // Inside the loop that sends data to rank 0
+    // This is having all the ranks share their data with rank zero. The tag should be unique i belive
     if (rank != 0)
     {
       for (i = yStart; i < yEnd; i++)
@@ -173,7 +184,7 @@ int main(int argc, char* argv[])
         for (j = xStart; j <= xEnd; j++)
         {
           double tmp_value = grid[i][j]->temp;
-          printf("sending data for %d, %d\n", i, j);
+          // printf("sending data for %d, %d\n", i, j);
           MPI_Send(&tmp_value, 1, MPI_DOUBLE, 0, (j + 1) * (i + 1), MPI_COMM_WORLD);
         }
       }
@@ -189,14 +200,15 @@ int main(int argc, char* argv[])
           {
             double tmp_value;
             int source_tag = (j + 1) * (i + 1);
-            printf("reciving data for %d, %d\n", i, j);
+            // printf("reciving data for %d, %d\n", i, j);
             MPI_Recv(&tmp_value, 1, MPI_DOUBLE, source_rank, source_tag, MPI_COMM_WORLD, &status);
             grid[i][j]->temp = tmp_value;
           }
         }
       }
 
-      if(0 == 0)
+      // ocasionally printing tabel
+      if(step % 30 == 0)
       {
         printf("Grid %d step-%d\n", rank, step);
         for(i = 0; i < yMax; i++)
@@ -212,6 +224,7 @@ int main(int argc, char* argv[])
       }
     }
 
+    // broadcasting data back out, forgot this for a while and it was causing me a lot more trouble than i want to admit
     for (i = 0; i < yMax; i++) {
       for (j = 0; j < xMax; j++) {
         Node* tmp_node = grid[i][j];
@@ -219,7 +232,6 @@ int main(int argc, char* argv[])
         MPI_Bcast(&(tmp_node->node_class), 1, MPI_INT, 0, MPI_COMM_WORLD);
       }
     }
-
 
     //Calculate the global maximum change across all ranks
     MPI_Allreduce(&maxChange, &globalMaxChange, 1, MPI_DOUBLE, MPI_MAX, MPI_COMM_WORLD);
@@ -249,7 +261,8 @@ int main(int argc, char* argv[])
   }
 
   // freeing memory
-  for (i = 0; i < yMax; i++) {
+  for (i = 0; i < yMax; i++)
+  {
     for (j = 0; j < xMax; j++) free(grid[i][j]);
     free(grid[i]);
   }
