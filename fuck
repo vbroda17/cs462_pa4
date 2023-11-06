@@ -1,0 +1,986 @@
+This is rank zero startring to do stuff
+Allocated grid
+Initialized grid
+Rank 1 doing grid allocation
+made it to reading lol - From 1 of 2
+Rank 1    x: 0-5    y: 3-6
+trying at 1 3 0
+Continuing at 1 3 0
+trying at 1 3 1
+trying at 1 3 2
+Rank 1 changing i,j 3,2 from 10.000000 to 10.000000
+trying at 1 3 3
+trying at 1 3 4
+Rank 1 changing i,j 3,4 from 10.000000 to 8.200000
+trying at 1 4 0
+Continuing at 1 4 0
+trying at 1 4 1
+Rank 1 changing i,j 4,1 from 10.000000 to 6.400000
+trying at 1 4 2
+trying at 1 4 3
+Rank 1 changing i,j 4,3 from 10.000000 to 8.200000
+trying at 1 4 4
+trying at 1 5 0
+Continuing at 1 5 0
+trying at 1 5 1
+Continuing at 1 5 1
+trying at 1 5 2
+Continuing at 1 5 2
+trying at 1 5 3
+Continuing at 1 5 3
+trying at 1 5 4
+Continuing at 1 5 4
+sending data for 3, 0
+sending data for 3, 1
+sending data for 3, 2
+sending data for 3, 3
+sending data for 3, 4
+sending data for 3, 5
+sending data for 4, 0
+sending data for 4, 1
+sending data for 4, 2
+sending data for 4, 3
+sending data for 4, 4
+sending data for 4, 5
+sending data for 5, 0
+sending data for 5, 1
+sending data for 5, 2
+sending data for 5, 3
+sending data for 5, 4
+sending data for 5, 5
+trying at 1 3 0
+Continuing at 1 3 0
+trying at 1 3 1
+Rank 1 changing i,j 3,1 from 10.000000 to 7.480000
+trying at 1 3 2
+trying at 1 3 3
+Rank 1 changing i,j 3,3 from 10.000000 to 9.280000
+trying at 1 3 4
+trying at 1 4 0
+Continuing at 1 4 0
+trying at 1 4 1
+trying at 1 4 2
+Rank 1 changing i,j 4,2 from 10.000000 to 7.120000
+trying at 1 4 3
+trying at 1 4 4
+Rank 1 changing i,j 4,4 from 10.000000 to 5.680000
+trying at 1 5 0
+Continuing at 1 5 0
+trying at 1 5 1
+Continuing at 1 5 1
+trying at 1 5 2
+Continuing at 1 5 2
+trying at 1 5 3
+Continuing at 1 5 3
+trying at 1 5 4
+Continuing at 1 5 4
+sending data for 3, 0
+sending data for 3, 1
+sending data for 3, 2
+sending data for 3, 3
+sending data for 3, 4
+made it to reading lol - From 0 of 2
+Rank 0    x: 0-5    y: 0-3
+
+step 0
+trying at 0 0 0
+Continuing at 0 0 0
+trying at 0 0 1
+Continuing at 0 0 1
+trying at 0 0 2
+Continuing at 0 0 2
+trying at 0 0 3
+Continuing at 0 0 3
+trying at 0 0 4
+Continuing at 0 0 4
+trying at 0 1 0
+Continuing at 0 1 0
+trying at 0 1 1
+trying at 0 1 2
+Rank 0 changing i,j 1,2 from 10.000000 to 8.200000
+trying at 0 1 3
+trying at 0 1 4
+Rank 0 changing i,j 1,4 from 10.000000 to 6.400000
+trying at 0 2 0
+Continuing at 0 2 0
+trying at 0 2 1
+Rank 0 changing i,j 2,1 from 10.000000 to 8.200000
+trying at 0 2 2
+trying at 0 2 3
+Rank 0 changing i,j 2,3 from 10.000000 to 10.000000
+trying at 0 2 4
+reciving data for 3, 0
+reciving data for 3, 1
+reciving data for 3, 2
+reciving data for 3, 3
+reciving data for 3, 4
+reciving data for 3, 5
+reciving data for 4, 0
+reciving data for 4, 1
+reciving data for 4, 2
+reciving data for 4, 3
+reciving data for 4, 4
+reciving data for 4, 5
+reciving data for 5, 0
+reciving data for 5, 1
+reciving data for 5, 2
+reciving data for 5, 3
+reciving data for 5, 4
+reciving data for 5, 5
+Grid 0 step-0
+1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 
+1.000000 10.000000 8.200000 10.000000 6.400000 1.000000 
+1.000000 8.200000 10.000000 10.000000 10.000000 1.000000 
+1.000000 10.000000 10.000000 10.000000 8.200000 1.000000 
+1.000000 6.400000 10.000000 8.200000 10.000000 1.000000 
+1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 
+
+step 1
+trying at 0 0 0
+Continuing at 0 0 0
+trying at 0 0 1
+Continuing at 0 0 1
+trying at 0 0 2
+Continuing at 0 0 2
+trying at 0 0 3
+Continuing at 0 0 3
+trying at 0 0 4
+Continuing at 0 0 4
+trying at 0 1 0
+Continuing at 0 1 0
+trying at 0 1 1
+Rank 0 changing i,j 1,1 from 10.000000 to 5.680000
+trying at 0 1 2
+trying at 0 1 3
+Rank 0 changing i,j 1,3 from 10.000000 to 7.120000
+trying at 0 1 4
+trying at 0 2 0
+Continuing at 0 2 0
+trying at 0 2 1
+trying at 0 2 2
+Rank 0 changing i,j 2,2 from 10.000000 to 9.280000
+trying at 0 2 3
+trying at 0 2 4
+Rank 0 changing i,j 2,4 from 10.000000 to 7.120000
+reciving data for 3, 0
+reciving data for 3, 1
+reciving data for 3, 2
+reciving data for 3, 3
+reciving data for 3, 4
+reciving data for 3, 5
+reciving data for 4, 0
+reciving data for 4, 1
+reciving data for 4, 2
+reciving data for 4, 3
+reciving data for 4, 4
+reciving data for 4, 5
+reciving data for 5, 0
+reciving data for 5, 1
+reciving data for 5, 2
+reciving data for 5, 3
+reciving data for 5, 4
+reciving data for 5, 5
+Grid 0 step-1
+1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 
+1.000000 5.680000 8.200000 7.120000 6.400000 1.000000 
+sending data for 3, 5
+sending data for 4, 0
+sending data for 4, 1
+sending data for 4, 2
+sending data for 4, 3
+sending data for 4, 4
+sending data for 4, 5
+sending data for 5, 0
+sending data for 5, 1
+sending data for 5, 2
+sending data for 5, 3
+sending data for 5, 4
+sending data for 5, 5
+1.000000 8.200000 9.280000 10.000000 7.120000 1.000000 
+1.000000 7.480000 10.000000 9.280000 8.200000 1.000000 
+1.000000 6.400000 7.120000 8.200000 5.680000 1.000000 
+1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 
+
+step 2
+trying at 0 0 0
+Continuing at 0 0 0
+trying at 0 0 1
+Continuing at 0 0 1
+trying at 0 0 2
+Continuing at 0 0 2
+trying at 0 0 3
+Continuing at 0 0 3
+trying at 0 0 4
+Continuing at 0 0 4
+trying at 0 1 0
+Continuing at 0 1 0
+trying at 0 1 1
+trying at 0 1 2
+Rank 0 changing i,j 1,2 from 8.200000 to 6.256000
+trying at 0 1 3
+trying at 0 1 4
+Rank 0 changing i,j 1,4 from 6.400000 to 4.528000
+trying at 0 2 0
+Continuing at 0 2 0
+trying at 0 2 1
+Rank 0 changing i,j 2,1 from 8.200000 to 6.328000
+trying at 0 2 2
+trying at 0 2 3
+Rank 0 changing i,j 2,3 from 10.000000 to 8.560000
+trying at 0 2 4
+reciving data for 3, 0
+reciving data for 3, 1
+reciving data for 3, 2
+reciving data for 3, 3
+reciving data for 3, 4
+reciving data for 3, 5
+reciving data for 4, 0
+reciving data for 4, 1
+reciving data for 4, 2
+reciving data for 4, 3
+reciving data for 4, 4
+reciving data for 4, 5
+reciving data for 5, 0
+reciving data for 5, 1
+reciving data for 5, 2
+reciving data for 5, 3
+reciving data for 5, 4
+reciving data for 5, 5
+Grid 0 step-2
+trying at 1 3 0
+Continuing at 1 3 0
+trying at 1 3 1
+trying at 1 3 2
+Rank 1 changing i,j 3,2 from 10.000000 to 8.776000
+trying at 1 3 3
+trying at 1 3 4
+Rank 1 changing i,j 3,4 from 8.200000 to 6.832000
+trying at 1 4 0
+Continuing at 1 4 0
+trying at 1 4 1
+Rank 1 changing i,j 4,1 from 6.400000 to 4.600000
+trying at 1 4 2
+trying at 1 4 3
+Rank 1 changing i,j 4,3 from 8.200000 to 6.256000
+trying at 1 4 4
+trying at 1 5 0
+Continuing at 1 5 0
+trying at 1 5 1
+Continuing at 1 5 1
+trying at 1 5 2
+Continuing at 1 5 2
+trying at 1 5 3
+Continuing at 1 5 3
+trying at 1 5 4
+Continuing at 1 5 4
+sending data for 3, 0
+sending data for 3, 1
+sending data for 3, 2
+sending data for 3, 3
+sending data for 3, 4
+sending data for 3, 5
+sending data for 4, 0
+sending data for 4, 1
+sending data for 4, 2
+sending data for 4, 3
+sending data for 4, 4
+sending data for 4, 5
+sending data for 5, 0
+sending data for 5, 1
+sending data for 5, 2
+sending data for 5, 3
+sending data for 5, 4
+sending data for 5, 5
+1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 
+1.000000 5.680000 6.256000 7.120000 4.528000 1.000000 
+1.000000 6.328000 9.280000 8.560000 7.120000 1.000000 
+1.000000 7.480000 8.776000 9.280000 6.832000 1.000000 
+1.000000 4.600000 7.120000 6.256000 5.680000 1.000000 
+1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 
+
+step 3
+trying at 0 0 0
+Continuing at 0 0 0
+trying at 0 0 1
+Continuing at 0 0 1
+trying at 0 0 2
+Continuing at 0 0 2
+trying at 0 0 3
+Continuing at 0 0 3
+trying at 0 0 4
+Continuing at 0 0 4
+trying at 0 1 0
+Continuing at 0 1 0
+trying at 0 1 1
+Rank 0 changing i,j 1,1 from 5.680000 to 4.052800
+trying at 0 1 2
+trying at 0 1 3
+Rank 0 changing i,j 1,3 from 7.120000 to 5.492800
+trying at 0 1 4
+trying at 0 2 0
+Continuing at 0 2 0
+trying at 0 2 1
+trying at 0 2 2
+Rank 0 changing i,j 2,2 from 9.280000 to 7.840000
+trying at 0 2 3
+trying at 0 2 4
+Rank 0 changing i,j 2,4 from 7.120000 to 5.608000
+reciving data for 3, 0
+reciving data for 3, 1
+reciving data for 3, 2
+reciving data for 3, 3
+reciving data for 3, 4
+reciving data for 3, 5
+reciving data for 4, 0
+reciving data for 4, 1
+reciving data for 4, 2
+reciving data for 4, 3
+reciving data for 4, 4
+reciving data for 4, 5
+reciving data for 5, 0
+reciving data for 5, 1
+reciving data for 5, 2
+reciving data for 5, 3
+reciving data for 5, 4
+trying at 1 3 0
+Continuing at 1 3 0
+trying at 1 3 1
+Rank 1 changing i,j 3,1 from 7.480000 to 6.371200
+trying at 1 3 2
+trying at 1 3 3
+Rank 1 changing i,j 3,3 from 9.280000 to 8.228800
+trying at 1 3 4
+trying at 1 4 0
+Continuing at 1 4 0
+trying at 1 4 1
+trying at 1 4 2
+Rank 1 changing i,j 4,2 from 7.120000 to 5.550400
+trying at 1 4 3
+trying at 1 4 4
+Rank 1 changing i,j 4,4 from 5.680000 to 4.153600
+trying at 1 5 0
+Continuing at 1 5 0
+trying at 1 5 1
+Continuing at 1 5 1
+trying at 1 5 2
+Continuing at 1 5 2
+trying at 1 5 3
+Continuing at 1 5 3
+trying at 1 5 4
+Continuing at 1 5 4
+sending data for 3, 0
+sending data for 3, 1
+sending data for 3, 2
+sending data for 3, 3
+sending data for 3, 4
+sending data for 3, 5
+sending data for 4, 0
+sending data for 4, 1
+sending data for 4, 2
+sending data for 4, 3
+sending data for 4, 4
+sending data for 4, 5
+sending data for 5, 0
+sending data for 5, 1
+sending data for 5, 2
+sending data for 5, 3
+sending data for 5, 4
+sending data for 5, 5
+reciving data for 5, 5
+Grid 0 step-3
+1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 
+1.000000 4.052800 6.256000 5.492800 4.528000 1.000000 
+1.000000 6.328000 7.840000 8.560000 5.608000 1.000000 
+1.000000 6.371200 8.776000 8.228800 6.832000 1.000000 
+1.000000 4.600000 5.550400 6.256000 4.153600 1.000000 
+1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 
+
+step 4
+trying at 0 0 0
+Continuing at 0 0 0
+trying at 0 0 1
+Continuing at 0 0 1
+trying at 0 0 2
+Continuing at 0 0 2
+trying at 0 0 3
+Continuing at 0 0 3
+trying at 0 0 4
+Continuing at 0 0 4
+trying at 0 1 0
+Continuing at 0 1 0
+trying at 0 1 1
+trying at 0 1 2
+Rank 0 changing i,j 1,2 from 6.256000 to 4.928320
+trying at 0 1 3
+trying at 0 1 4
+Rank 0 changing i,j 1,4 from 4.528000 to 3.525760
+trying at 0 2 0
+Continuing at 0 2 0
+trying at 0 2 1
+Rank 0 changing i,j 2,1 from 6.328000 to 5.118400
+trying at 0 2 2
+trying at 0 2 3
+Rank 0 changing i,j 2,3 from 8.560000 to 7.145920
+trying at 0 2 4
+reciving data for 3, 0
+reciving data for 3, 1
+reciving data for 3, 2
+reciving data for 3, 3
+reciving data for 3, 4
+reciving data for 3, 5
+reciving data for 4, 0
+reciving data for 4, 1
+reciving data for 4, 2
+reciving data for 4, 3
+reciving data for 4, 4
+reciving data for 4, 5
+reciving data for 5, 0
+reciving data for 5, 1
+reciving data for 5, 2
+reciving data for 5, 3
+reciving data for 5, 4
+reciving data for 5, 5
+Grid 0 step-4
+1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 
+1.000000 4.052800 4.928320 5.492800 3.525760 1.000000 
+1.000000 5.118400 7.840000 7.145920 5.608000 1.000000 
+1.000000 6.371200 7.785280 8.228800 6.042880 1.000000 
+1.000000 3.704320 5.550400 5.037760 4.153600 1.000000 
+1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 
+
+step 5
+trying at 0 0 0
+Continuing at 0 0 0
+trying at 0 0 1
+Continuing at 0 0 1
+trying at 0 0 2
+Continuing at 0 0 2
+trying at 0 0 3
+Continuing at 0 0 3
+trying at 0 0 4
+Continuing at 0 0 4
+trying at 0 1 0
+Continuing at 0 1 0
+trying at 0 1 1
+Rank 0 changing i,j 1,1 from 4.052800 to 3.219904
+trying at 0 1 2
+trying at 0 1 3
+Rank 0 changing i,j 1,3 from 5.492800 to 4.418560
+trying at 0 1 4
+trying at 0 2 0
+Continuing at 0 2 0
+trying at 0 2 1
+trying at 0 2 2
+Rank 0 changing i,j 2,2 from 7.840000 to 6.563584
+trying at 0 2 3
+trying at 0 2 4
+Rank 0 changing i,j 2,4 from 5.608000 to 4.664512
+reciving data for 3, 0
+reciving data for 3, 1
+reciving data for 3, 2
+reciving data for 3, 3
+reciving data for 3, 4
+reciving data for 3, 5
+reciving data for 4, 0
+reciving data for 4, 1
+reciving data for 4, 2
+reciving data for 4, 3
+reciving data for 4, 4
+reciving data for 4, 5
+reciving data for 5, 0
+reciving data for 5, 1
+reciving data for 5, 2
+reciving data for 5, 3
+reciving data for 5, 4
+reciving data for 5, 5
+Grid 0 step-5
+1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 
+1.000000 3.219904 4.928320 4.418560 3.525760 1.000000 
+1.000000 5.118400 6.563584 7.145920 4.664512 1.000000 
+1.000000 5.772160 7.785280 7.418944 6.042880 1.000000 
+1.000000 3.704320 4.615552 5.037760 3.446848 1.000000 
+1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 
+
+step 6
+trying at 0 0 0
+Continuing at 0 0 0
+trying at 0 0 1
+Continuing at 0 0 1
+trying at 0 0 2
+Continuing at 0 0 2
+trying at 0 0 3
+Continuing at 0 0 3
+trying at 0 0 4
+Continuing at 0 0 4
+trying at 0 1 0
+Continuing at 0 1 0
+trying at 0 1 1
+trying at 0 1 2
+Rank 0 changing i,j 1,2 from 4.928320 to 4.026074
+trying at 0 1 3
+trying at 0 1 4
+Rank 0 changing i,j 1,4 from 3.525760 to 2.921766
+trying at 0 2 0
+Continuing at 0 2 0
+trying at 0 2 1
+Rank 0 changing i,j 2,1 from 5.118400 to 4.334810
+trying at 0 2 2
+trying at 0 2 3
+Rank 0 changing i,j 2,3 from 7.145920 to 6.042304
+trying at 0 2 4
+reciving data for 3, 0
+reciving data for 3, 1
+reciving data for 3, 2
+reciving data for 3, 3
+reciving data for 3, 4
+reciving data for 3, 5
+reciving data for 4, 0
+reciving data for 4, 1
+reciving data for 4, 2
+reciving data for 4, 3
+reciving data for 4, 4
+reciving data for 4, 5
+reciving data for 5, 0
+reciving data for 5, 1
+reciving data for 5, 2
+reciving data for 5, 3
+reciving data for 5, 4
+reciving data for 5, 5
+Grid 0 step-6
+1.000000 1.000000 1.trying at 1 3 0
+Continuing at 1 3 0
+trying at 1 3 1
+trying at 1 3 2
+Rank 1 changing i,j 3,2 from 8.776000 to 7.785280
+trying at 1 3 3
+trying at 1 3 4
+Rank 1 changing i,j 3,4 from 6.832000 to 6.042880
+trying at 1 4 0
+Continuing at 1 4 0
+trying at 1 4 1
+Rank 1 changing i,j 4,1 from 4.600000 to 3.704320
+trying at 1 4 2
+trying at 1 4 3
+Rank 1 changing i,j 4,3 from 6.256000 to 5.037760
+trying at 1 4 4
+trying at 1 5 0
+Continuing at 1 5 0
+trying at 1 5 1
+Continuing at 1 5 1
+trying at 1 5 2
+Continuing at 1 5 2
+trying at 1 5 3
+Continuing at 1 5 3
+trying at 1 5 4
+Continuing at 1 5 4
+sending data for 3, 0
+sending data for 3, 1
+sending data for 3, 2
+sending data for 3, 3
+sending data for 3, 4
+sending data for 3, 5
+sending data for 4, 0
+sending data for 4, 1
+sending data for 4, 2
+sending data for 4, 3
+sending data for 4, 4
+sending data for 4, 5
+sending data for 5, 0
+sending data for 5, 1
+sending data for 5, 2
+sending data for 5, 3
+sending data for 5, 4
+sending data for 5, 5
+trying at 1 3 0
+Continuing at 1 3 0
+trying at 1 3 1
+Rank 1 changing i,j 3,1 from 6.371200 to 5.772160
+trying at 1 3 2
+trying at 1 3 3
+Rank 1 changing i,j 3,3 from 8.228800 to 7.418944
+trying at 1 3 4
+trying at 1 4 0
+Continuing at 1 4 0
+trying at 1 4 1
+trying at 1 4 2
+Rank 1 changing i,j 4,2 from 5.550400 to 4.615552
+trying at 1 4 3
+trying at 1 4 4
+Rank 1 changing i,j 4,4 from 4.153600 to 3.446848
+trying at 1 5 0
+Continuing at 1 5 0
+trying at 1 5 1
+Continuing at 1 5 1
+trying at 1 5 2
+Continuing at 1 5 2
+trying at 1 5 3
+Continuing at 1 5 3
+trying at 1 5 4
+Continuing at 1 5 4
+sending data for 3, 0
+sending data for 3, 1
+sending data for 3, 2
+sending data for 3, 3
+sending data for 3, 4
+sending data for 3, 5
+sending data for 4, 0
+sending data for 4, 1
+sending data for 4, 2
+sending data for 4, 3
+sending data for 4, 4
+sending data for 4, 5
+sending data for 5, 0
+sending data for 5, 1
+sending data for 5, 2
+sending data for 5, 3
+sending data for 5, 4
+sending data for 5, 5
+trying at 1 3 0
+Continuing at 1 3 0
+trying at 1 3 1
+trying at 1 3 2
+Rank 1 changing i,j 3,2 from 7.785280 to 7.118387
+trying at 1 3 3
+trying at 1 3 4
+Rank 1 changing i,j 3,4 from 6.042880 to 5.581734
+trying at 1 4 0
+Continuing at 1 4 0
+trying at 1 4 1
+Rank 1 changing i,j 4,1 from 3.704320 to 3.218406
+trying at 1 4 2
+trying at 1 4 3
+Rank 1 changing i,j 4,3 from 5.037760 to 4.303821
+trying at 1 4 4
+trying at 1 5 0
+Continuing at 1 5 0
+trying at 1 5 1
+Continuing at 1 5 1
+trying at 1 5 2
+Continuing at 1 5 2
+trying at 1 5 3
+Continuing at 1 5 3
+trying at 1 5 4
+Continuing at 1 5 4
+sending data for 3, 0
+sending data for 3, 1
+sending data for 3, 2
+sending data for 3, 3
+sending data for 3, 4
+sending data for 3, 5
+sending data for 4, 0
+sending data for 4, 1
+sending data for 4, 2
+sending data for 4, 3
+sending data for 4, 4
+sending data for 4, 5
+sending data for 5, 0
+sending data for 5, 1
+sending data for 5, 2
+sending data for 5, 3
+sending data for 5, 4
+sending data for 5, 5
+trying at 1 3 0
+Continuing at 1 3 0
+trying at 1 3 1
+Rank 1 changing i,j 3,1 from 5.772160 to 5.421791
+trying at 1 3 2
+trying at 1 3 3
+Rank 1 changing i,j 3,3 from 7.418944 to 6.884577
+trying at 1 3 4
+trying at 1 4 0
+Continuing at 1 4 0
+trying at 1 4 1
+trying at 1 4 2
+Rank 1 changing i,j 4,2 from 4.615552 to 4.051233
+trying at 1 4 3
+trying at 1 4 4
+Rank 1 changing i,j 4,4 from 3.446848 to 3.066481
+trying at 1 5 0
+Continuing at 1 5 0
+trying at 1 5 1
+Continuing at 1 5 1
+trying at 1 5 2
+Continuing at 1 5 2
+trying at 1 5 3
+Continuing at 1 5 3
+trying at 1 5 4
+Continuing at 1 5 4
+sending data for 3, 0
+sending data for 3, 1
+sending data for 3, 2
+sending data for 3, 3
+sending data for 3, 4
+sending data for 3, 5
+sending data for 4, 0
+sending data for 4, 1
+sending data for 4, 2
+sending data for 4, 3
+sending data for 4, 4
+sending data for 4, 5
+sending data for 5, 0
+sending data for 5, 1
+sending data for 5, 2
+sending data for 5, 3
+sending data for 5, 4
+sending data for 5, 5
+trying at 1 3 0
+Continuing at 1 3 0
+trying at 1 3 1
+trying at 1 3 2
+Rank 1 changing i,j 3,2 from 7.118387 to 6.695198
+trying at 1 3 3
+trying at 1 3 4
+Rank 1 changing i,j 3,4 from 5.581734 to 000000 1.000000 1.000000 1.000000 
+1.000000 3.219904 4.026074 4.418560 2.921766 1.000000 
+1.000000 4.334810 6.563584 6.042304 4.664512 1.000000 
+1.000000 5.772160 7.118387 7.418944 5.581734 1.000000 
+1.000000 3.218406 4.615552 4.303821 3.446848 1.000000 
+1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 
+
+step 7
+trying at 0 0 0
+Continuing at 0 0 0
+trying at 0 0 1
+Continuing at 0 0 1
+trying at 0 0 2
+Continuing at 0 0 2
+trying at 0 0 3
+Continuing at 0 0 3
+trying at 0 0 4
+Continuing at 0 0 4
+trying at 0 1 0
+Continuing at 0 1 0
+trying at 0 1 1
+Rank 0 changing i,j 1,1 from 3.219904 to 2.716157
+trying at 0 1 2
+trying at 0 1 3
+Rank 0 changing i,j 1,3 from 4.418560 to 3.681741
+trying at 0 1 4
+trying at 0 2 0
+Continuing at 0 2 0
+trying at 0 2 1
+trying at 0 2 2
+Rank 0 changing i,j 2,2 from 6.563584 to 5.617032
+trying at 0 2 3
+trying at 0 2 4
+Rank 0 changing i,j 2,4 from 4.664512 to 4.042063
+reciving data for 3, 0
+reciving data for 3, 1
+reciving data for 3, 2
+reciving data for 3, 3
+reciving data for 3, 4
+reciving data for 3, 5
+reciving data for 4, 0
+reciving data for 4, 1
+reciving data for 4, 2
+reciving data for 4, 3
+reciving data for 4, 4
+reciving data for 4, 5
+reciving data for 5, 0
+reciving data for 5, 1
+reciving data for 5, 2
+reciving data for 5, 3
+reciving data for 5, 4
+reciving data for 5, 5
+Grid 0 step-7
+1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 
+1.000000 2.716157 4.026074 3.681741 2.921766 1.000000 
+1.000000 4.334810 5.617032 6.042304 4.042063 1.000000 
+1.000000 5.421791 7.118387 6.884577 5.581734 1.000000 
+1.000000 3.218406 4.051233 4.303821 3.066481 1.000000 
+1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 
+
+step 8
+trying at 0 0 0
+Continuing at 0 0 0
+trying at 0 0 1
+Continuing at 0 0 1
+trying at 0 0 2
+Continuing at 0 0 2
+trying at 0 0 3
+Continuing at 0 0 3
+trying at 0 0 4
+Continuing at 0 0 4
+trying at 0 1 0
+Continuing at 0 1 0
+trying at 0 1 1
+trying at 0 1 2
+Rank 0 changing i,j 1,2 from 4.026074 to 3.408201
+trying at 0 1 3
+trying at 0 1 4
+Rank 0 changing i,j 1,4 from 2.921766 to 2.529114
+trying at 0 2 0
+Continuing at 0 2 0
+trying at 0 2 1
+Rank 0 changing i,j 2,1 from 4.334810 to 3.817958
+trying at 0 2 2
+trying at 0 2 3
+Rank 0 changing i,j 2,3 from 6.042304 to 5.253543
+trying at 0 2 4
+reciving data for 3, 0
+reciving data for 3, 1
+reciving data for 3, 2
+reciving data for 3, 3
+reciving data for 3, 4
+reciving data for 3, 5
+reciving data for 4, 0
+reciving data for 4, 1
+reciving data for 4, 2
+reciving data for 4, 3
+reciving data for 4, 4
+reciving data for 4, 5
+reciving data for 5, 0
+reciving data for 5, 1
+reciving data for 5, 2
+reciving data for 5, 3
+reciving data for 5, 4
+reciving data for 5, 5
+Grid 0 step-8
+1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 
+1.000000 2.716157 3.408201 3.681741 2.529114 1.000000 
+1.000000 3.817958 5.617032 5.253543 4.042063 1.000000 
+1.000000 5.421791 6.695198 6.884577 5.306558 1.000000 
+1.000000 2.938286 4.051233 3.861222 3.066481 1.000000 
+1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 
+
+step 9
+trying at 0 0 0
+Continuing at 0 0 0
+trying at 0 0 1
+Continuing at 0 0 1
+trying at 0 0 2
+Continuing at 0 0 2
+trying at 0 0 3
+Continuing at 0 0 3
+trying at 0 0 4
+Continuing at 0 0 4
+trying at 0 1 0
+Continuing at 0 1 0
+trying at 0 1 1
+Rank 0 changing i,j 1,1 from 2.716157 to 2.388463
+trying at 0 1 2
+trying at 0 1 3
+Rank 0 changing i,j 1,3 from 3.681741 to 3.174520
+trying at 0 1 4
+trying at 0 2 0
+Continuing at 0 2 0
+trying at 0 2 1
+trying at 0 2 2
+Rank 0 changing i,j 2,2 from 5.617032 to 4.958386
+trying at 0 2 3
+trying at 0 2 4
+Rank 0 changing i,j 2,4 from 4.042063 to 3.626256
+reciving data for 3, 0
+reciving data for 3, 1
+reciving data for 3, 2
+reciving data for 3, 3
+reciving data for 3, 4
+reciving data for 3, 5
+reciving data for 4, 0
+reciving data for 4, 1
+reciving data for 4, 2
+reciving data for 4, 3
+reciving data for 4, 4
+reciving data for 4, 5
+reciving data for 5, 0
+reciving data for 5, 1
+reciving data for 5, 2
+reciving data for 5, 3
+reciving data for 5, 4
+reciving data for 5, 5
+Grid 0 step-9
+1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 
+1.000000 2.388463 3.405.306558
+trying at 1 4 0
+Continuing at 1 4 0
+trying at 1 4 1
+Rank 1 changing i,j 4,1 from 3.218406 to 2.938286
+trying at 1 4 2
+trying at 1 4 3
+Rank 1 changing i,j 4,3 from 4.303821 to 3.861222
+trying at 1 4 4
+trying at 1 5 0
+Continuing at 1 5 0
+trying at 1 5 1
+Continuing at 1 5 1
+trying at 1 5 2
+Continuing at 1 5 2
+trying at 1 5 3
+Continuing at 1 5 3
+trying at 1 5 4
+Continuing at 1 5 4
+sending data for 3, 0
+sending data for 3, 1
+sending data for 3, 2
+sending data for 3, 3
+sending data for 3, 4
+sending data for 3, 5
+sending data for 4, 0
+sending data for 4, 1
+sending data for 4, 2
+sending data for 4, 3
+sending data for 4, 4
+sending data for 4, 5
+sending data for 5, 0
+sending data for 5, 1
+sending data for 5, 2
+sending data for 5, 3
+sending data for 5, 4
+sending data for 5, 5
+trying at 1 3 0
+Continuing at 1 3 0
+trying at 1 3 1
+Rank 1 changing i,j 3,1 from 5.421791 to 5.211055
+trying at 1 3 2
+trying at 1 3 3
+Rank 1 changing i,j 3,3 from 6.884577 to 6.549511
+trying at 1 3 4
+trying at 1 4 0
+Continuing at 1 4 0
+trying at 1 4 1
+trying at 1 4 2
+Rank 1 changing i,j 4,2 from 4.051233 to 3.709188
+trying at 1 4 3
+trying at 1 4 4
+Rank 1 changing i,j 4,4 from 3.066481 to 2.846852
+trying at 1 5 0
+Continuing at 1 5 0
+trying at 1 5 1
+Continuing at 1 5 1
+trying at 1 5 2
+Continuing at 1 5 2
+trying at 1 5 3
+Continuing at 1 5 3
+trying at 1 5 4
+Continuing at 1 5 4
+sending data for 3, 0
+sending data for 3, 1
+sending data for 3, 2
+sending data for 3, 3
+sending data for 3, 4
+sending data for 3, 5
+sending data for 4, 0
+sending data for 4, 1
+sending data for 4, 2
+sending data for 4, 3
+sending data for 4, 4
+sending data for 4, 5
+sending data for 5, 0
+sending data for 5, 1
+sending data for 5, 2
+sending data for 5, 3
+sending data for 5, 4
+sending data for 5, 5
+8201 3.174520 2.529114 1.000000 
+1.000000 3.817958 4.958386 5.253543 3.626256 1.000000 
+1.000000 5.211055 6.695198 6.549511 5.306558 1.000000 
+1.000000 2.938286 3.709188 3.861222 2.846852 1.000000 
+1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 
+Time taken: 0.001584 seconds
+Grid 0
+1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 
+1.000000 2.388463 3.408201 3.174520 2.529114 1.000000 
+1.000000 3.817958 4.958386 5.253543 3.626256 1.000000 
+1.000000 5.211055 6.695198 6.549511 5.306558 1.000000 
+1.000000 2.938286 3.709188 3.861222 2.846852 1.000000 
+1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 
